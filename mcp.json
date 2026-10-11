@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "sqlite-analytics": {
+      "command": "/Users/giriteja/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/Users/giriteja/Documents/Default Project/mcp_server/sqlite-mcp",
+        "run",
+        "server.py"
+      ]
+    }
+  }
+}

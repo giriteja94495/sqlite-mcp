@@ -1,0 +1,36 @@
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+
+
+uv init sqlite-mcp
+cd sqlite-mcp
+uv add "mcp[cli]"
+touch server.py
+
+
+uv run seed.py
+
+
+uv run mcp dev server.py
+
+
+open -e "$HOME/Library/Application Support/Claude/claude_desktop_config.json"
+
+code "$HOME/Library/Application Support/Claude/claude_desktop_config.json"
+
+
+"mcpServers": {
+    "sqlite-analytics": {
+      "command": "/Users/giriteja/.local/bin/uv",
+      "args": [
+        "--directory",
+        "/Users/giriteja/Documents/Default Project/mcp_server/sqlite-mcp",
+        "run",
+        "server.py"
+      ]
+    }
+  }
+
+
+
+ uv run --with mcp==2.3.0 mcp run server.py   

@@ -1,0 +1,13 @@
+{
+  // Hide auto-generated / tooling noise so the Explorer shows only the files that matter.
+  // Comment out any line to make that item visible again.
+  "files.exclude": {
+    "**/__pycache__": true,      // Python bytecode cache
+    "**/.venv": true,            // virtual environment (managed by uv)
+    "**/.git": true,             // git internals
+    "**/.python-version": true,  // uv's Python pin
+    "**/.gitignore": true,       // git ignore rules
+    "**/.vscode": true,          // this folder
+    "uv.lock": true              // dependency lockfile (auto-managed)
+  }
+}
